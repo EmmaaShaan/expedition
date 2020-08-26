@@ -24,6 +24,7 @@ public class TriggerQuestion : MonoBehaviour
         //Fade In and Fade Out
         fadeMaster.FadeOut();
         yield return new WaitForSeconds(fadeSeconds);
+        QuestionPanels.SetActive(true);
         _playerRB.Acceleration = 0.0f;
         fadeMaster.FadeIn();
     }
